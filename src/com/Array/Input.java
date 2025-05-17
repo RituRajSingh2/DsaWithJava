@@ -14,14 +14,16 @@ public class Input {
         System.out.println(arr[3]);
 //        second way to take input
         int [] arr1={12,32,72,68,78,43};
+//        in this method object is created on its own
 //        taking input using loop
         Scanner in=new Scanner(System.in);
-        System.out.println("enter value:");
+        System.out.println("Enter size of array:");
+        int n= in.nextInt();
+        int []numbers=new int [n];
+        System.out.println("Enter " +n+ " Elements");
         for(int i=0; i<arr.length; i++){
-            arr[i]=in.nextInt();
+            numbers[i]=in.nextInt();
         }
-        for(int i=0; i<arr.length; i++){
-            System.out.println(arr+" ");
-        }
+        System.out.println("Array input by user: " + Arrays.toString(numbers));
     }
 }
