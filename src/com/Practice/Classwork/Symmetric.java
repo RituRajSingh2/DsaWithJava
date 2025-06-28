@@ -2,7 +2,6 @@ package com.Practice.Classwork;
 class Node {
     int data;
     Node left, right;
-
     Node(int val) {
         data = val;
         left = right = null;
@@ -23,7 +22,6 @@ public class Symmetric {
             return true;
         return isMirror(root.left, root.right);
     }
-
     public static void main(String[] args) {
         Node root=new Node(90);
         root.left=new Node(20);
