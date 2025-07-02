@@ -30,7 +30,6 @@ public class Symmetric {
         root.left.right=new Node(40);
         root.right.left=new Node(40);
         root.right.left=new Node(30);
-
         if (isSymmetric(root)) {
             System.out.println("true");
         }
