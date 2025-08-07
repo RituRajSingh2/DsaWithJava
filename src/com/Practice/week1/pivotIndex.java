@@ -1,10 +1,17 @@
 package com.Practice.week1;
-
+import java.util.Arrays;
 public class pivotIndex {
     public static void main(String[] args) {
         int[] nums = {1, 7, 3, 6, 5, 6};
         int ans=pivotIndex(nums);
-        System.out.println("pivotIndex is:"+ans);
+        System.out.println(Arrays.toString(nums));
+        change(nums);
+        System.out.println(Arrays.toString(nums));
+        System.out.println("pivot Index is: " +ans);
+    }
+    static void change(int[]nums){
+        nums[2]=20;
+        nums[4]=22;
     }
     static int  pivotIndex(int[] nums){
 //   Lets find TotalSum
